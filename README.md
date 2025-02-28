@@ -31,8 +31,8 @@ Ensure all required tools are installed on your system.
 
 ---
 
-```bash
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 ---
 Infrastructure Description
@@ -48,25 +48,25 @@ Any other relevant components
 Deployment Process
 Initialize Terraform
 
-```bash
-terraform init
+   ```bash
+   terraform init
 
 Plan the Deployment
 
-```bash
-terraform plan
+   ```bash
+   terraform plan
 
 Apply the Configuration
 
-```bash
-terraform apply auto-approve
+   ```bash
+   terraform apply auto-approve
 
 Run Ansible Playbooks
 
 After Terraform has provisioned the infrastructure:
 
-```bash
-ansible-playbook -i ansible/inventory/hosts ansible/playbook.yml
+   ```bash
+   ansible-playbook -i ansible/inventory/hosts ansible/playbook.yml
 
 Environment Variables and Configuration
 Environment variables and configuration files required for the project. 
