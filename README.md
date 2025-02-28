@@ -25,21 +25,10 @@ Software and tools required to set up and deploy this project:
    cd your-repo-name
 Install Dependencies
 
-Ensure all required tools are installed on your system. For example, using pip for Python dependencies:
+Ensure all required tools are installed on your system. 
 
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
-Configure Environment Variables
-
-Create a .env file in the root directory and add the necessary environment variables:
-
-bash
-Copy
-Edit
-cp .env.example .env
-Update the .env file with your specific configuration.
 
 Infrastructure Description
 Infrastructure components and architecture. This include details such as:
@@ -52,32 +41,28 @@ Any other relevant components
 Deployment Process
 Initialize Terraform
 
-bash
-Copy
-Edit
+```bash
 terraform init
+
 Plan the Deployment
 
-bash
-Copy
-Edit
+```bash
 terraform plan
+
 Apply the Configuration
 
-bash
-Copy
-Edit
-terraform apply
+```bash
+terraform apply auto-approve
+
 Run Ansible Playbooks
 
 After Terraform has provisioned the infrastructure:
 
-bash
-Copy
-Edit
+```bash
 ansible-playbook -i ansible/inventory/hosts ansible/playbook.yml
+
 Environment Variables and Configuration
-List and explain all environment variables and configuration files required for the project. For example:
+Environment variables and configuration files required for the project. 
 
 AWS_ACCESS_KEY_ID: Your AWS access key
 AWS_SECRET_ACCESS_KEY: Your AWS secret key
@@ -88,8 +73,6 @@ Directory Structure
 Provide an overview of the project's directory structure:
 
 css
-Copy
-Edit
 ├── ansible/
 │   ├── inventory/
 │   │   └── hosts
@@ -102,7 +85,7 @@ Edit
 ├── .env.example
 ├── README.md
 └── ...
-Service-Specific README.md Files
+
 
 
 ## Deployment Instructions
@@ -113,16 +96,12 @@ Service-Specific README.md Files
    cd services/service-name
 Apply Terraform Configuration
 
-bash
-Copy
-Edit
+```bash
 terraform init
 terraform apply
 Run Ansible Playbook
 
-bash
-Copy
-Edit
+```bash
 ansible-playbook -i ../../ansible/inventory/hosts playbook.yml
 Testing
 Provide instructions on how to test the service to ensure it's working correctly.
