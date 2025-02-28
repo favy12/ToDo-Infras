@@ -23,13 +23,18 @@ Software and tools required to set up and deploy this project:
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
+
+---
 Install Dependencies
 
 Ensure all required tools are installed on your system. 
 
+---
+
 ```bash
 pip install -r requirements.txt
 
+---
 Infrastructure Description
 Infrastructure components and architecture. This include details such as:
 
@@ -38,6 +43,8 @@ Network architecture (VPCs, subnets, security groups)
 Compute resources (EC2 instances, containers)
 Storage solutions (databases, object storage)
 Any other relevant components
+
+----
 Deployment Process
 Initialize Terraform
 
